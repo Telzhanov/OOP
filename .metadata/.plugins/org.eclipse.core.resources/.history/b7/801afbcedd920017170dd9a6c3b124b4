@@ -1,0 +1,45 @@
+import java.util.Scanner;
+class Data
+{
+	private double sum=0;
+	private double max=-99999;
+	private int i1;
+	int counter=0;
+	public Data() {
+		
+	}
+	public void addData() {
+		Scanner scan = new Scanner(System.in);
+		while (true) {
+			if (scan.nextLine()=="Q") {
+				System.out.println("Average"+sum/counter);
+				System.out.println("Maximum"+max);
+				break;
+			}
+			else {
+				i1=scan.nextInt();
+				max();
+				average();
+			}
+		}
+	}
+	public void average() {
+		counter++;
+		sum=sum+i1;
+		
+	}
+	public void max() {
+		if (i1>max) {
+			max=i1;
+		}
+	}
+	
+}
+public class Ex4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

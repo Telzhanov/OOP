@@ -1,0 +1,53 @@
+import java.util.Scanner;
+class Data{
+	private double a=-99999;
+	private double sum=0;
+	private int c;
+	Boolean notQ=true;
+	int number=0;
+	public Data()
+	{
+		
+	}
+	public void addData()
+	{
+		Scanner scan = new Scanner(System.in);
+		while(notQ)
+		{
+			if (scan.nextLine()=="Q") {
+				notQ=false;
+				System.out.println(average());
+				System.out.println(maximum());
+			}
+			else {
+				c=scan.nextInt();
+				maximum();
+				average();
+				
+				
+			}
+		}
+	}
+	public double average()
+	{
+		number++;
+		sum=sum+c;
+		return sum/number;
+		
+	}
+	public double maximum()
+	{
+		if (c>a) {
+			a=c;
+		}
+		return a;
+	}
+}
+public class Ex4 {
+	
+}
+
+public class Analyzer {
+	Data d1= new Data();
+	d1.addData();
+}

@@ -1,0 +1,16 @@
+class Animal{
+	String name="Animal";
+	public Animal() {
+	
+	}
+	public String show() {
+		return name;
+	}
+}
+
+public class Ex1 {
+	public static void main(String[] args) {
+		
+	}
+
+}

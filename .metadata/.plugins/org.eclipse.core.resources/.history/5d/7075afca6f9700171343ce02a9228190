@@ -1,0 +1,13 @@
+class Car {
+	double fueleff;
+	double fuel=0;
+	public Car(double fueleff) {
+		this.fueleff=fueleff;
+	}
+	public void drive(double distance) {
+		
+	}
+}
+public class Ex2 {
+
+}

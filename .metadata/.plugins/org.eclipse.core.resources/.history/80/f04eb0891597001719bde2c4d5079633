@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class Ex6 {
+static String[] first = new String[] {"zero", "one","two","three","four","five","six","seven","eight","nine",
+			"ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen",
+			"seventeen","eighteen","nineteen"};
+static String[] second = new String[] {"","","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"};
+static String[] third = new String[] {"","","hundread","thousands"};
+	public static String twoDigits(int number) {
+		if (number<=19) {
+			return first[number];
+		}
+		else {
+			if(number%10==0) {
+				return second[number/10];
+			}
+			else {
+				return second[number/10]+" "+first[number%10];
+			}
+		}
+	}
+	public static String threeDigits(int number) {
+		if (number-((number/100)*100)==0)
+		{
+			return first[number/100]+" "+third[2];
+		}
+		else {
+			return first[number/100]+" "+third[2]+" " + twoDigits(number-((number/100)*100));
+			}
+		}
+	
+	public static String inWords(int number) {
+		String str=Integer.toString(number);
+		String answer="";
+		int n=str.length();
+		if (n==5) {
+			if (number%10000==0) {
+				
+			}
+		}
+		return threeDigits(number);
+	}
+		
+		public static void main(String[] args) {
+			Scanner scan = new Scanner(System.in);
+			int n=scan.nextInt();
+			System.out.println(inWords(n));
+		}
+
+}
