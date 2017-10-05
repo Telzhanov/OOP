@@ -1,6 +1,5 @@
 import java.util.Scanner;
 public class Ex5 {
-	static int[] doubleAr(int [] a) {}
 	public static void main(String[] args) {
 		int n;
 		int j=0;

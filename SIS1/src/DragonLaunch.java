@@ -55,7 +55,8 @@ public class DragonLaunch {
 		}
 		System.out.println(v1.toString());*/
 		}	
-	}
+	
+
 	public static void main(String[] args) {
 		
 		Person p1 = new Person(Gender.BOY);
